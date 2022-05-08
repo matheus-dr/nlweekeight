@@ -1,12 +1,9 @@
-import { useState } from 'react';
 import { Popover } from '@headlessui/react';
 import { ChatTeardropDots } from 'phosphor-react';
 
 import { WidgetForm } from './WidgetForm';
 
 export function Widget() {
-  const [isWidgetOpen, setIsWidgetOpen] = useState(false);
-
   return (
     <Popover
       className={
@@ -27,8 +24,7 @@ export function Widget() {
             'max-w-0 overflow-hidden group-hover:max-w-xs transition-all duration-500 ease-linear'
           }
         >
-          <span className={'pl-2'}></span>
-          Feedback
+          <span className={'pl-2'}>Feedback</span>
         </span>
       </Popover.Button>
     </Popover>
