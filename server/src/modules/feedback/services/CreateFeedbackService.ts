@@ -29,6 +29,9 @@ export class CreateFeedbackService {
         `<div style='font-family: sans-serif; font-size: 16px; color: #111'>`,
         `<p>Tipo do feedback: ${data.type}</p>`,
         `<p>Comentário do feedback: ${data.comment}</p>`,
+        data.screenshot
+          ? `<img src='${data.screenshot}' alt='Screenshot do usuário' />`
+          : null,
         `</div>`,
       ].join('\n'),
     });
