@@ -7,6 +7,6 @@ config({ silent: true });
 
 const apiConfig = api();
 
-app.listen(apiConfig.PORT, async () => {
+app.listen(apiConfig.PORT || 3333, async () => {
   console.log(`SERVER STARTED ON http://localhost:${apiConfig.PORT}`);
 });
