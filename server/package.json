@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "jest --no-cache",
-    "dev:server": "ts-node-dev src/shared/infra/http/server.ts"
+    "dev:server": "ts-node-dev src/shared/infra/http/server.ts",
+    "build": "tsc",
+    "start": "node dist/src/shared/infra/http/server.js"
   },
   "keywords": [],
   "author": "",
